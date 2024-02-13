@@ -2,6 +2,7 @@
 #define THREE_SAT_HPP
 
 #include "sat.hpp"
+#include <memory>
 #include <vector>
 
 class ThreeClause : public Clause {
@@ -13,7 +14,7 @@ public:
 
 class ThreeSAT : public SAT {
 public:
-    ThreeSAT(std::vector<ThreeClause> clauses);
+    ThreeSAT(std::vector<std::unique_ptr<ThreeClause>>&& clauses);
 };
 
 #endif
