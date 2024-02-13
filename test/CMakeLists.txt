@@ -9,8 +9,6 @@ FetchContent_MakeAvailable(googletest)
 
 include_directories(../src)
 
-enable_testing()
-
 add_executable(reductions_test
     sat_test.cpp
 )

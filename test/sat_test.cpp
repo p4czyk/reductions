@@ -7,7 +7,7 @@
 
 using namespace std;
 
-TEST(SATTest, BasicAssertions) {
+TEST(SAT, ToString) {
     vector<Literal> literals{1, -1, -2};
     unique_ptr<Clause> clause = make_unique<Clause>(literals);
     vector<unique_ptr<Clause>> clauses;
