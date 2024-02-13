@@ -5,6 +5,8 @@
 #include <memory>
 #include <vector>
 
+using namespace std;
+
 class ThreeClause : public Clause {
 public:
     ThreeClause(Literal one);
@@ -14,7 +16,7 @@ public:
 
 class ThreeSAT : public SAT {
 public:
-    ThreeSAT(std::vector<std::unique_ptr<ThreeClause>> clauses);
+    ThreeSAT(vector<unique_ptr<ThreeClause>> clauses);
 };
 
 #endif

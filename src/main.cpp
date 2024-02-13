@@ -17,5 +17,7 @@ int main() {
     SAT reduced = reduction.reduce(std::move(three_sat));
     cout << "Reduced: " << reduced.to_string() << endl;
 
+    vector<Literal> literals{1, -1, -2};
+    unique_ptr<Clause> clause = make_unique<Clause>(literals);
     return 0;
 }
