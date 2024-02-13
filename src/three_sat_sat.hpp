@@ -3,11 +3,11 @@
 
 #include "reduction.hpp"
 #include "sat.hpp"
-#include "3sat.hpp"
+#include "three_sat.hpp"
 
-class ThreeSAT_SAT : public Reduction<ThreeSAT, SAT> {
+class ThreeSATSAT : public Reduction<ThreeSAT, SAT> {
 public:
-    ThreeSAT_SAT();
+    ThreeSATSAT();
     virtual SAT reduce(ThreeSAT from);
 };
 

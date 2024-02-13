@@ -6,23 +6,25 @@
 #include <vector>
 #include "problem.hpp"
 
+using namespace std;
+
 typedef int Literal;
 
 class Clause {
 private:
-    std::vector<std::unique_ptr<Literal>> literals;
+    vector<Literal> literals;
 
 public:
-    Clause(std::vector<std::unique_ptr<Literal>>);
-    std::vector<std::unique_ptr<Literal>> get_literals();
+    Clause(vector<Literal>);
+    vector<Literal> get_literals();
 };
 
 class SAT : public Problem {
 private:
-    std::vector<std::unique_ptr<Clause>> clauses;
+    vector<unique_ptr<Clause>> clauses;
 public:
-    SAT(std::vector<std::unique_ptr<Clause>> clauses);
-    virtual std::string to_string();
+    SAT(vector<unique_ptr<Clause>> clauses);
+    virtual string to_string();
 };
 
 #endif

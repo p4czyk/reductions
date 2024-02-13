@@ -3,9 +3,11 @@
 
 #include <string>
 
+using namespace std;
+
 class Problem {
 public:
-    virtual std::string to_string() = 0;
+    virtual string to_string() = 0;
 };
 
 #endif

@@ -14,7 +14,7 @@ public:
 
 class ThreeSAT : public SAT {
 public:
-    ThreeSAT(std::vector<std::unique_ptr<ThreeClause>>&& clauses);
+    ThreeSAT(std::vector<std::unique_ptr<ThreeClause>> clauses);
 };
 
 #endif
