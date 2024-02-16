@@ -7,7 +7,7 @@
 
 class HCTSP : public Reduction<HC, TSP> {
 public:
-    HCTSP();
+    HCTSP() {}
     virtual TSP reduce(HC from);
 };
 
