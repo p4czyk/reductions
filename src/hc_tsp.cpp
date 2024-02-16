@@ -7,12 +7,6 @@
 #include <boost/graph/graph_traits.hpp>
 #include <boost/graph/properties.hpp>
 
-/**
- * @brief Reduces an instance from Hamilton circuit (HC) to Traveling salesperson (TSP).
- * 
- * @param from A Hamilton circuit instance.
- * @return A Traveling salesperson instance.
- */
 TSP HCTSP::reduce(HC from) {
     Graph hc_graph = from.get_graph(); // Copy input graph
     Graph reduced(num_vertices(from.get_graph())); // Initialize new graph

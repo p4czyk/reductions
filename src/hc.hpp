@@ -3,15 +3,17 @@
 
 #include "graph.hpp"
 #include "problem.hpp"
-#include <boost/graph/adjacency_list.hpp>
-#include <boost/graph/graph_concepts.hpp>
-#include <boost/graph/graph_selectors.hpp>
-#include <boost/graph/graph_traits.hpp>
-#include <boost/graph/properties.hpp>
-#include <boost/pending/property.hpp>
 
 using namespace boost;
 
+/**
+ * \brief The Hamiltonian circuit problem.
+ * 
+ * INSTANCE: A graph \f$G = (V, E)\f$.
+ *
+ * QUESTION: Does \f$G\f$ contain a Hamiltonian circuit?
+ * 
+ */
 class HC : public Problem {
 private:
     Graph graph;
