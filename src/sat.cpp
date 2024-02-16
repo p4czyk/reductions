@@ -10,7 +10,7 @@ Clause::Clause(vector<Literal> literals) {
     this->literals = literals;
 }
 
-SAT::SAT(vector<std::unique_ptr<Clause>> clauses) {
+SAT::SAT(vector<unique_ptr<Clause>> clauses) {
     this->clauses = std::move(clauses);
 }
 

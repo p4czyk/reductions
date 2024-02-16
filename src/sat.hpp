@@ -10,6 +10,10 @@ using namespace std;
 
 typedef int Literal;
 
+/**
+ * @brief 
+ * 
+ */
 class Clause {
 private:
     vector<Literal> literals;

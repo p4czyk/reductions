@@ -10,5 +10,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 enable_testing()
 
+find_package(Boost
+    1.74
+    REQUIRED
+)
+
 add_subdirectory(src)
 add_subdirectory(test)

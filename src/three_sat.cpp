@@ -18,7 +18,7 @@ ThreeClause::ThreeClause(Literal one, Literal two, Literal three) : Clause(vecto
 
 }
 
-ThreeSAT::ThreeSAT(std::vector<unique_ptr<ThreeClause>> clauses) 
+ThreeSAT::ThreeSAT(vector<unique_ptr<ThreeClause>> clauses) 
     : SAT(vector<unique_ptr<Clause>>(
         make_move_iterator(clauses.begin()), 
         make_move_iterator(clauses.end())
